@@ -1,0 +1,91 @@
+ body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f8ff; /* A light, sky-blue color */
+        }
+
+        /* Custom styles for the NEW Login Page */
+        .login-page-background {
+            background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center/cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-box-new { /* Renamed from .login-box to avoid conflicts */
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            width: 350px;
+            max-width: 90%; /* Responsive adjustment */
+            text-align: center;
+        }
+
+        .login-box-new h2 {
+            margin-bottom: 20px;
+            font-size: 1.8rem; /* Adjusted for better look */
+            color: #333;
+        }
+
+        .login-box-new input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box; /* Ensures padding doesn't increase width */
+        }
+
+        .login-box-new button {
+            width: 100%;
+            padding: 12px;
+            background: #ff9800; /* Orange color */
+            border: none;
+            color: white;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+            margin-top: 10px;
+        }
+
+        .login-box-new button:hover {
+            background: #e68900;
+        }
+
+        .login-box-new .error { /* Scoped error class */
+            color: red;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+
+        .login-box-new a {
+            display: block;
+            margin-top: 15px;
+            color: #333;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .login-box-new a:hover {
+            color: #ff9800;
+        }
+        /* End Custom styles for the NEW Login Page */
+
+        .loader {
+            border-top-color: #3498db;
+            -webkit-animation: spin 1s linear infinite;
+            animation: spin 1s linear infinite;
+        }
+
+        @-webkit-keyframes spin {
+            0% { -webkit-transform: rotate(0deg); }
+            100% { -webkit-transform: rotate(360deg); }
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }

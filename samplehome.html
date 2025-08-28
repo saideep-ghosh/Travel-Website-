@@ -8,30 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
     <!-- Tailwind CSS CDN for styling -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f0f8ff; /* A light, sky-blue color */
-        }
-
-        .loader {
-            border-top-color: #3498db;
-            -webkit-animation: spin 1s linear infinite;
-            animation: spin 1s linear infinite;
-        }
-
-        @-webkit-keyframes spin {
-            0% { -webkit-transform: rotate(0deg); }
-            100% { -webkit-transform: rotate(360deg); }
-        }
-
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-    </style>
+    <script src="samplehome.js" defer></script>
 </head>
 <body>
 
@@ -62,7 +42,7 @@
         <header class="bg-gradient-to-br from-indigo-500 to-purple-600 text-white text-center py-20 px-8 rounded-b-[4rem] shadow-xl">
             <div class="container mx-auto max-w-2xl">
                 <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight tracking-wide drop-shadow-lg">Explore with SafarNama</h1>
-                <p class="text-lg md:text-xl font-medium mb-8 opacity-90">Create your perfect journey with our expert guidance.  Because your journey is out story</p>
+                <p class="text-lg md:text-xl font-medium mb-8 opacity-90">Create your perfect journey with our expert guidance. Because your journey is our story</p>
                 <button class="bg-white text-indigo-600 hover:bg-gray-200 font-bold py-3 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105">
                     Start Your Adventure
                 </button>
@@ -114,7 +94,7 @@
         <!-- Dynamic Itinerary Section (Initially Hidden) -->
         <section id="itinerary-section" class="py-16 bg-gray-100 hidden">
             <div class="container mx-auto px-4">
-                <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12" id="itenary-title"></h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12" id="itinerary-title"></h2>
                 <div id="itinerary-content" class="bg-white p-8 rounded-2xl shadow-2xl border border-gray-200">
                     <!-- Itinerary will be injected here -->
                 </div>
@@ -127,29 +107,29 @@
             <div class="container mx-auto px-4">
                 <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">Popular Destinations</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Destination Card 1 - New York City -->
+                    <!-- Destination Card 1 - Jaipur, Rajasthan -->
                     <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden transform hover:-translate-y-2">
-                        <img src="jaipur.jpeg" alt="New York City" class="w-full h-48 object-cover">
+                        <img src="jaipur.jpeg" alt="Jaipur, Rajasthan" class="w-full h-48 object-cover">
                         <div class="p-6">
                             <h3 class="text-xl font-bold text-gray-800 mb-2">Jaipur, Rajasthan</h3>
-                            <p class="text-gray-600 mb-4">Explore the PINK city , from iconic landmarks to hidden gems.</p>
+                            <p class="text-gray-600 mb-4">Explore the PINK city, from iconic landmarks to hidden gems.</p>
                             <a href="#" class="inline-block bg-indigo-600 text-white font-semibold py-2 px-4 rounded-full hover:bg-indigo-700 transition-colors">View Details</a>
                         </div>
                     </div>
-                    <!-- Destination Card 2 - Kyoto, Japan -->
+                    <!-- Destination Card 2 - Kolkata, West Bengal -->
                     <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden transform hover:-translate-y-2">
-                        <img src="kolkata.jpeg" alt="Kyoto, Japan" class="w-full h-48 object-cover">
+                        <img src="kolkata.jpeg" alt="Kolkata, West Bengal" class="w-full h-48 object-cover">
                         <div class="p-6">
-                            <h3 class="text-xl font-bold text-gray-800 mb-2">Kolkata , West Bengal</h3>
-                            <p class="text-gray-600 mb-4">Discover the magical streets of city of Love </p>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Kolkata, West Bengal</h3>
+                            <p class="text-gray-600 mb-4">Discover the magical streets of city of Love</p>
                             <a href="#" class="inline-block bg-indigo-600 text-white font-semibold py-2 px-4 rounded-full hover:bg-indigo-700 transition-colors">View Details</a>
                         </div>
                     </div>
-                    <!-- Destination Card 3 - Swiss Alps -->
+                    <!-- Destination Card 3 - Mumbai, Maharashtra -->
                     <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden transform hover:-translate-y-2">
-                        <img src="mumbai.jpg" alt="Swiss Alps" class="w-full h-48 object-cover">
+                        <img src="mumbai.jpg" alt="Mumbai, Maharashtra" class="w-full h-48 object-cover">
                         <div class="p-6">
-                            <h3 class="text-xl font-bold text-gray-800 mb-2">Mumbai , Maharastra</h3>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Mumbai, Maharashtra</h3>
                             <p class="text-gray-600 mb-4">A city that never sleeps, where dreams, chaos, and charisma collide by the Arabian Sea.</p>
                             <a href="#" class="inline-block bg-indigo-600 text-white font-semibold py-2 px-4 rounded-full hover:bg-indigo-700 transition-colors">View Details</a>
                         </div>
@@ -161,381 +141,23 @@
         <!-- Footer -->
         <footer class="bg-gray-800 text-white py-8">
             <div class="container mx-auto px-4 text-center">
-                <p>&copy; 2024 Safarama. All rights reserved.</p>
+                <p>&copy; 2024 SafarNama. All rights reserved.</p>
             </div>
         </footer>
     </div>
 
-    <!-- The Login Page container (initially hidden) -->
-    <div id="login-page" class="hidden fixed inset-0 bg-gray-900 bg-opacity-75 flex items-center justify-center p-4 z-50 transition-opacity duration-500">
-        <div class="bg-white p-8 sm:p-10 rounded-2xl shadow-2xl w-full max-w-md transform transition-transform duration-300 scale-95 opacity-0" id="login-card">
-            <h2 class="text-3xl font-bold text-center text-gray-800 mb-6">Welcome Back</h2>
-            <form id="login-form">
-                <div class="mb-4">
-                    <label for="login-email" class="block text-gray-700 font-medium mb-2">Email Address</label>
-                    <input type="email" id="login-email" name="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-colors" placeholder="yourname@example.com" required>
-                </div>
-                <div class="mb-6">
-                    <label for="login-password" class="block text-gray-700 font-medium mb-2">Password</label>
-                    <input type="password" id="login-password" name="password" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-colors" placeholder="********" required>
-                </div>
-                <button type="submit" class="w-full bg-indigo-600 text-white font-bold py-3 px-6 rounded-full hover:bg-indigo-700 transition-colors duration-300 shadow-md">
-                    Log In
-                </button>
+    <!-- The NEW Login Page container -->
+    <div id="login-page" class="hidden fixed inset-0 z-50 transition-opacity duration-500 login-page-background">
+        <div class="login-box-new" id="login-card-new">
+            <h2>Login</h2>
+            <div class="error" id="error-msg"></div>
+            <form onsubmit="return handleLoginSubmit(event)">
+                <input type="text" id="username" placeholder="Enter Username">
+                <input type="password" id="password" placeholder="Enter Password">
+                <button type="submit">Login</button>
             </form>
-            <div class="mt-6 text-center text-gray-600">
-                <a href="#" class="hover:text-indigo-600 font-medium transition-colors" id="forgot-password">Forgot Password?</a>
-            </div>
-            <div class="mt-4 text-center">
-                <button id="back-to-home-from-login-btn" class="text-indigo-600 hover:text-indigo-800 font-bold transition-colors mt-2">Back to Home</button>
-            </div>
+            <a href="#" id="back-to-home-from-login-btn-new">Back to Home</a>
         </div>
     </div>
-    
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // Get all necessary elements by their IDs
-            const homePage = document.getElementById('home-page');
-            const loginPage = document.getElementById('login-page');
-            const loginBtn = document.getElementById('login-btn');
-            const backToHomeFromLoginBtn = document.getElementById('back-to-home-from-login-btn');
-            const loginForm = document.getElementById('login-form');
-            const tripPlanForm = document.getElementById('trip-plan-form');
-            const loginCard = document.getElementById('login-card');
-            
-            const messageBox = document.getElementById('message-box');
-            const messageText = document.getElementById('message-text');
-
-            const recommendationSection = document.getElementById('recommendation-section');
-            const recommendationGrid = document.getElementById('recommendation-grid');
-            const itinerarySection = document.getElementById('itinerary-section');
-            const itineraryTitle = document.getElementById('itinerary-title');
-            const itineraryContent = document.getElementById('itinerary-content');
-
-            /**
-             * Shows a custom message box with a given message and color.
-             * @param {string} message The message to display.
-             * @param {string} type The type of message ('success' or 'error' or 'info').
-             */
-            function showMessage(message, type) {
-                messageText.textContent = message;
-                
-                // Set the background color based on the message type
-                if (type === 'success') {
-                    messageBox.style.backgroundColor = '#10B981'; // Green-500
-                } else if (type === 'error') {
-                    messageBox.style.backgroundColor = '#EF4444'; // Red-500
-                } else {
-                    messageBox.style.backgroundColor = '#3B82F6'; // Blue-500 for info
-                }
-
-                // Show the message box with a smooth transition
-                messageBox.classList.remove('translate-y-full', 'opacity-0');
-                messageBox.classList.add('translate-y-0', 'opacity-100');
-
-                // Hide the message box after 3 seconds
-                setTimeout(() => {
-                    messageBox.classList.remove('translate-y-0', 'opacity-100');
-                    messageBox.classList.add('translate-y-full', 'opacity-0');
-                }, 3000);
-            }
-
-            /**
-             * Transitions to a specified page view.
-             * @param {HTMLElement} currentPage The page element to hide.
-             * @param {HTMLElement} nextPage The page element to show.
-             * @param {HTMLElement} nextCard The card element to animate.
-             */
-            function showPage(currentPage, nextPage, nextCard) {
-                currentPage.style.opacity = '0';
-                setTimeout(() => {
-                    currentPage.classList.add('hidden');
-                    nextPage.classList.remove('hidden');
-                    setTimeout(() => {
-                        nextPage.style.opacity = '1';
-                        if (nextCard) {
-                            nextCard.classList.remove('scale-95', 'opacity-0');
-                            nextCard.classList.add('scale-100', 'opacity-100');
-                        }
-                    }, 500);
-                }, 500);
-            }
-
-            // Event listener for the "Login" button on the home page
-            if (loginBtn) {
-                loginBtn.addEventListener('click', () => showPage(homePage, loginPage, loginCard));
-            }
-
-            // Event listener for the "Back to Home" button on the login page
-            if (backToHomeFromLoginBtn) {
-                backToHomeFromLoginBtn.addEventListener('click', () => showPage(loginPage, homePage));
-            }
-
-            // Event listener for the login form submission
-            if (loginForm) {
-                loginForm.addEventListener('submit', (event) => {
-                    event.preventDefault();
-                    
-                    const email = document.getElementById('login-email').value;
-                    const password = document.getElementById('login-password').value;
-
-                    // A basic check. In a real app, this would be a server-side authentication.
-                    if (email === "test@example.com" && password === "password123") {
-                        showMessage("Login successful!", 'success');
-                        setTimeout(() => showPage(loginPage, homePage), 2000);
-                    } else {
-                        showMessage("Invalid email or password.", 'error');
-                    }
-                });
-            }
-
-            // Function to handle the API call and display recommendation
-            async function getRecommendation(prompt) {
-                let retryCount = 0;
-                const maxRetries = 3;
-                let delay = 1000;
-                const apiKey = "AIzaSyBTsUGnyPTsuxESGQKTA4cCIHtZffvqaM0";
-                const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
-                const payload = {
-                    contents: [{ parts: [{ text: prompt }] }],
-                    generationConfig: {
-                        responseMimeType: "application/json",
-                        responseSchema: {
-                            type: "OBJECT",
-                            properties: {
-                                "travel_plans": {
-                                    type: "ARRAY",
-                                    items: {
-                                        type: "OBJECT",
-                                        properties: {
-                                            "title": { "type": "STRING" },
-                                            "description": { "type": "STRING" }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                };
-
-                while (retryCount < maxRetries) {
-                    try {
-                        const response = await fetch(url, {
-                            method: 'POST',
-                            headers: { 'Content-Type': 'application/json' },
-                            body: JSON.stringify(payload)
-                        });
-
-                        if (response.status === 429) {
-                            await new Promise(res => setTimeout(res, delay));
-                            delay *= 2;
-                            retryCount++;
-                            continue;
-                        }
-
-                        const result = await response.json();
-                        const text = result?.candidates?.[0]?.content?.parts?.[0]?.text;
-
-                        if (text) {
-                            return JSON.parse(text);
-                        } else {
-                            throw new Error("API response was empty or malformed.");
-                        }
-                    } catch (error) {
-                        console.error("API call failed:", error);
-                        throw error;
-                    }
-                }
-                throw new Error("API call failed after multiple retries.");
-            }
-
-            // Function to handle the API call for itinerary
-            async function getItinerary(prompt) {
-                let retryCount = 0;
-                const maxRetries = 3;
-                let delay = 1000;
-                const apiKey = "AIzaSyBTsUGnyPTsuxESGQKTA4cCIHtZffvqaM0";
-                const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
-                const payload = {
-                    contents: [{ parts: [{ text: prompt }] }],
-                    generationConfig: {
-                        responseMimeType: "application/json",
-                        responseSchema: {
-                            type: "OBJECT",
-                            properties: {
-                                "title": { "type": "STRING" },
-                                "days": {
-                                    type: "ARRAY",
-                                    items: {
-                                        type: "OBJECT",
-                                        properties: {
-                                            "day_title": { "type": "STRING" },
-                                            "schedule": { "type": "STRING" }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                };
-            
-                while (retryCount < maxRetries) {
-                    try {
-                        const response = await fetch(url, {
-                            method: 'POST',
-                            headers: { 'Content-Type': 'application/json' },
-                            body: JSON.stringify(payload)
-                        });
-            
-                        if (response.status === 429) {
-                            await new Promise(res => setTimeout(res, delay));
-                            delay *= 2;
-                            retryCount++;
-                            continue;
-                        }
-
-                        const result = await response.json();
-                        const text = result?.candidates?.[0]?.content?.parts?.[0]?.text;
-            
-                        if (text) {
-                            return JSON.parse(text);
-                        } else {
-                            throw new Error("API response was empty or malformed.");
-                        }
-                    } catch (error) {
-                        console.error("API call for itinerary failed:", error);
-                        throw error;
-                    }
-                }
-                throw new Error("API call for itinerary failed after multiple retries.");
-            }
-            
-            // Event listener for the trip planning form submission
-            if (tripPlanForm) {
-                tripPlanForm.addEventListener('submit', async (event) => {
-                    event.preventDefault();
-
-                    const travelers = document.getElementById('travelers').value;
-                    const startDate = document.getElementById('start-date').value;
-                    const endDate = document.getElementById('end-date').value;
-                    const budget = document.getElementById('budget').value;
-                    
-                    if (!travelers || !startDate || !endDate || !budget) {
-                        showMessage("Please fill out all trip details.", 'error');
-                        return;
-                    }
-
-                    // Hide itinerary section if it was shown
-                    itinerarySection.classList.add('hidden');
-
-                    // Show loading state and scroll to the recommendation section
-                    recommendationSection.classList.remove('hidden');
-                    recommendationGrid.innerHTML = `
-                        <div class="col-span-1 md:col-span-2 lg:col-span-3 text-center">
-                            <div class="flex flex-col items-center justify-center space-y-4">
-                                <div class="loader ease-linear rounded-full border-4 border-t-4 border-gray-200 h-12 w-12 mb-4"></div>
-                                <p class="text-gray-500 text-lg animate-pulse">Finding your perfect adventures...</p>
-                            </div>
-                        </div>
-                    `;
-                    window.scrollTo({
-                        top: recommendationSection.offsetTop,
-                        behavior: 'smooth'
-                    });
-
-                    // Construct a prompt for the AI model asking for a list of 5 suggestions
-                    const prompt = `Suggest 5 unique travel plans. For each plan, provide a compelling and creative title (e.g., "Swiss Alps Adventure") and a brief, engaging description (a single paragraph). The travel parameters are: ${travelers} travelers, from ${startDate} to ${endDate}, with a budget of $${budget}. The output MUST be a JSON object with a single key "travel_plans" containing an array of objects with "title" and "description" keys.`;
-
-                    try {
-                        const responseData = await getRecommendation(prompt);
-                        
-                        // Clear the loading indicator
-                        recommendationGrid.innerHTML = '';
-                        
-                        if (responseData && responseData.travel_plans && responseData.travel_plans.length > 0) {
-                            responseData.travel_plans.forEach(plan => {
-                                const cardHTML = `
-                                    <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden transform hover:-translate-y-2 flex flex-col">
-                                        <div class="p-6 flex-grow">
-                                            <h3 class="text-xl font-bold text-gray-800 mb-2">${plan.title}</h3>
-                                            <p class="text-gray-600 mb-4">${plan.description}</p>
-                                        </div>
-                                        <div class="p-4 bg-gray-50 border-t border-gray-200">
-                                            <button onclick="generateItinerary('${plan.title}', '${plan.description}')" class="w-full bg-indigo-600 text-white font-semibold py-3 px-6 rounded-full hover:bg-indigo-700 transition-colors shadow-md">
-                                                Generate Itinerary ✨
-                                            </button>
-                                        </div>
-                                    </div>
-                                `;
-                                recommendationGrid.innerHTML += cardHTML;
-                            });
-                        } else {
-                            throw new Error("No travel plans were returned from the API.");
-                        }
-
-                    } catch (error) {
-                         // Fallback error message for the user
-                        recommendationGrid.innerHTML = `
-                            <div class="col-span-1 md:col-span-2 lg:col-span-3 text-center">
-                                <p class="text-red-500 font-bold">Failed to generate recommendations.</p>
-                                <p class="text-gray-600 mt-2">The trip planner is experiencing a temporary issue. Please try again later!</p>
-                            </div>
-                        `;
-                        showMessage("Failed to plan your trip. Please try again.", 'error');
-                        console.error("Error generating recommendations:", error);
-                    }
-                });
-            }
-
-            // Function for the "Generate Itinerary" button
-            window.generateItinerary = async (tripTitle, tripDescription) => {
-                // Show loading state in itinerary section
-                itinerarySection.classList.remove('hidden');
-                itineraryTitle.textContent = `Itinerary for: ${tripTitle}`;
-                itineraryContent.innerHTML = `
-                    <div class="text-center">
-                        <div class="flex flex-col items-center justify-center space-y-4">
-                            <div class="loader ease-linear rounded-full border-4 border-t-4 border-gray-200 h-12 w-12 mb-4"></div>
-                            <p class="text-gray-500 text-lg animate-pulse">Building your itinerary...</p>
-                        </div>
-                    </div>
-                `;
-                window.scrollTo({
-                    top: itinerarySection.offsetTop,
-                    behavior: 'smooth'
-                });
-
-                const prompt = `Create a detailed day-by-day itinerary for a trip titled "${tripTitle}" with the following description: "${tripDescription}". Organize it into an array of objects, where each object has a "day_title" (e.g., "Day 1: Arrival & City Exploration") and a "schedule" (a detailed paragraph of activities for that day). The final output MUST be a JSON object with a "title" and a "days" key containing the array.`;
-
-                try {
-                    const itineraryData = await getItinerary(prompt);
-                    
-                    if (itineraryData && itineraryData.days && itineraryData.days.length > 0) {
-                        let htmlContent = '';
-                        itineraryData.days.forEach(day => {
-                            htmlContent += `
-                                <div class="bg-gray-50 p-6 rounded-xl border border-gray-200 mb-6 last:mb-0">
-                                    <h4 class="text-xl font-bold text-gray-800 mb-2">${day.day_title}</h4>
-                                    <p class="text-gray-600">${day.schedule}</p>
-                                </div>
-                            `;
-                        });
-                        itineraryContent.innerHTML = htmlContent;
-                    } else {
-                        throw new Error("No itinerary data was returned from the API.");
-                    }
-                } catch (error) {
-                    itineraryContent.innerHTML = `
-                        <div class="text-center">
-                            <p class="text-red-500 font-bold">Failed to generate an itinerary.</p>
-                            <p class="text-gray-600 mt-2">The itinerary planner is experiencing a temporary issue. Please try again later!</p>
-                        </div>
-                    `;
-                    showMessage("Failed to generate itinerary. Please try again.", 'error');
-                    console.error("Error generating itinerary:", error);
-                }
-            };
-        });
-    </script>
 </body>
 </html>
