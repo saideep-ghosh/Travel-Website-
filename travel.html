@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Travelling Website</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+ 
+<header>
+  <nav class="navbar">
+    <div class="nav-logo">
+      <a href="#hero-section">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=80&q=80" class="logo" alt="Logo">
+      </a>
+      <span class="brand-name">TravelX</span>
+    </div>
+    <ul class="links-container">
+      <li class="link-item"><a href="#travel"><i class="fas fa-plane"></i> Travel</a></li>
+      <li class="link-item"><a href="#explore-section"><i class="fas fa-compass"></i> Explore</a></li>
+      <li class="link-item"><a href="#services"><i class="fas fa-concierge-bell"></i> Services</a></li>
+      <li class="link-item"><a href="#booknow"><i class="fas fa-calendar-check"></i> Book Now</a></li>
+      <li class="link-item"><a href="#shop"><i class="fas fa-store"></i> Shop</a></li>
+      <li class="link-item"><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="hero-section" id="hero-section">
+    <div class="hero-bg"></div>
+    <div class="hero-section-content" data-aos="fade-up">
+      <h1 class="hero-section-title">Discover Your Next Adventure</h1>
+      <p class="hero-section-sub-heading">Unforgettable journeys, curated experiences, and seamless bookings.</p>
+      <a href="#booknow" class="cta-btn">Start Your Journey</a>
+    </div>
+    <img src="https://cdn-icons-png.flaticon.com/512/32/32195.png" class="scroll-down-icon" alt="Scroll down indicator">
+  </section>
+
+  <!-- Explore Section -->
+  <section id="explore-section" class="explore-section">
+    <h2>Popular Destinations</h2>
+    <div class="destinations-grid">
+      <div class="destination-card">
+        <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Paris">
+        <div class="destination-info">
+          <h3>Paris</h3>
+          <p>The city of lights and love.</p>
+        </div>
+      </div>
+      <div class="destination-card">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=400&q=80" alt="Bali">
+        <div class="destination-info">
+          <h3>Bali</h3>
+          <p>Tropical paradise for relaxation.</p>
+        </div>
+      </div>
+      <div class="destination-card">
+        <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="New York">
+        <div class="destination-info">
+          <h3>New York</h3>
+          <p>The city that never sleeps.</p>
+        </div>
+      </div>
+      <div class="destination-card">
+        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=400&q=80" alt="Tokyo">
+        <div class="destination-info">
+          <h3>Tokyo</h3>
+          <p>Where tradition meets technology.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services-section">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <i class="fas fa-hotel"></i>
+        <h3>Hotel Booking</h3>
+        <p>Best deals on hotels worldwide.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-plane-departure"></i>
+        <h3>Flight Booking</h3>
+        <p>Affordable flights to your dream destinations.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-map-marked-alt"></i>
+        <h3>Tour Packages</h3>
+        <p>Curated tours for every traveler.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-car"></i>
+        <h3>Car Rentals</h3>
+        <p>Convenient car rentals for your journey.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Book Now Section -->
+  <section id="booknow" class="booknow-section">
+    <h2>Book Your Trip</h2>
+    <form class="book-form">
+      <input type="text" placeholder="Destination" required>
+      <input type="date" required>
+      <input type="number" placeholder="Number of Travelers" min="1" required>
+      <button type="submit">Book Now</button>
+    </form>
+  </section>
+
+  <!-- Shop Section -->
+  <section id="shop" class="shop-section">
+    <h2>Shop</h2>
+    <div class="shop-items">
+      <div class="shop-item">
+        <img src="backpack-school-hallway.jpg" alt="Travel Backpack">
+        <h3>Travel Backpack</h3>
+        <p>Durable and spacious backpack for all your adventures.</p>
+        <span class="price">$49.99</span>
+        <button><i class="fas fa-cart-plus"></i> Add to Cart</button>
+      </div>
+      <div class="shop-item">
+        <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=400&q=80" alt="Travel Guide Book">
+        <h3>Travel Guide Book</h3>
+        <p>Your companion for exploring new destinations.</p>
+        <span class="price">$19.99</span>
+        <button><i class="fas fa-cart-plus"></i> Add to Cart</button>
+      </div>
+      <div class="shop-item">
+        <img src="https://pixabay.com/photos/bag-leather-messenger-bag-classic-1854148/" alt="Travel Water Bottle">
+        <h3>Travel Water Bottle</h3>
+        <p>Stay hydrated on the go with our insulated bottle.</p>
+        <span class="price">$14.99</span>
+        <button><i class="fas fa-cart-plus"></i> Add to Cart</button>
+      </div>
+      <div class="shop-item">
+        <img src="https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80" alt="Travel Pillow">
+        <h3>Travel Pillow</h3>
+        <p>Comfortable pillow for long journeys.</p>
+        <span class="price">$24.99</span>
+        <button><i class="fas fa-cart-plus"></i> Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <div class="contact-wrapper">
+      <form class="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        
+        <button type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+      </form>
+      <div class="contact-info">
+        <p><i class="fas fa-envelope"></i> info@travelsite.com</p>
+        <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+        <p><i class="fas fa-map-marker-alt"></i> 123 Adventure Road, Wander City</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-content">
+    <p>&copy; 2025 TravelX. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#privacy">Privacy Policy</a> | 
+      <a href="#terms">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

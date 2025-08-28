@@ -1,0 +1,95 @@
+/* ...existing code... */
+
+.shop-section {
+  background: #f9f9f9;
+  padding: 40px 0;
+  text-align: center;
+}
+.shop-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+.shop-items {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.shop-item {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 20px;
+  width: 250px;
+  text-align: left;
+}
+.shop-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+.shop-item h3 {
+  font-size: 1.2rem;
+  margin: 10px 0 5px;
+}
+.shop-item p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+.shop-item button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.shop-item button:hover {
+  background: #0056b3;
+}
+
+.contact-section {
+  background: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+.contact-form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contact-form label {
+  text-align: left;
+  font-weight: 500;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+.contact-form button {
+  background: #28a745;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+.contact-form button:hover {
+  background: #218838;
+}
+
+/* ...existing code... */

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Travel Explorer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center/cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login-box {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      width: 350px;
+      text-align: center;
+    }
+
+    .login-box h2 {
+      margin-bottom: 20px;
+    }
+
+    .login-box input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .login-box button {
+      width: 100%;
+      padding: 12px;
+      background: #ff9800;
+      border: none;
+      color: white;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .login-box button:hover {
+      background: #e68900;
+    }
+
+    .error {
+      color: red;
+      font-size: 0.9rem;
+    }
+
+    .login-box a {
+      display: block;
+      margin-top: 15px;
+      color: #333;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-box">
+    <h2>Login</h2>
+    <div class="error" id="error-msg"></div>
+    <form onsubmit="return validateLogin()">
+      <input type="text" id="username" placeholder="Enter Username">
+      <input type="password" id="password" placeholder="Enter Password">
+      <button type="submit">Login</button>
+    </form>
+    <a href="index.html">Back to Home</a>
+  </div>
+
+  <script>
+    function validateLogin() {
+      let username = document.getElementById("username").value.trim();
+      let password = document.getElementById("password").value.trim();
+      let errorMsg = document.getElementById("error-msg");
+
+      if (username === "" || password === "") {
+        errorMsg.textContent = "⚠ Please fill in all fields!";
+        return false;
+      }
+
+      // Demo check (you can replace with real authentication later)
+      if (username === "admin" && password === "1234") {
+        alert("Login successful! Redirecting...");
+        window.location.href = "index.html";
+        return false; // prevent default form submission
+      } else {
+        errorMsg.textContent = "❌ Invalid username or password!";
+        return false;
+      }
+    }
+  </script>
+
+</body>
+</html>
